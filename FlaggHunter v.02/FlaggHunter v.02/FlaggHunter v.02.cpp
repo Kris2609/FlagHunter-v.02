@@ -1,11 +1,27 @@
 // FlaggHunter v.02.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+#include<SFML/Graphics.hpp>
 
-#include <iostream>
+
+using namespace sf; 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+  
+    RenderWindow window(VideoMode(800, 600), "FlagHunter"); 
+
+    Event event; 
+
+    while (window.isOpen())
+    {
+        while (window.pollEvent(event))
+        {
+            if (event.type == Event::Closed) {
+                window.close(); 
+            }
+
+        }
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
