@@ -7,10 +7,14 @@ private:
 	Texture playerTexture; 
 	Sprite sprite; 
 public: 
+	
 	void MoveUp(); 
 	void MoveDown(); 
 	void MoveLeft(); 
-	void MoveRight(); 
+	void MoveRight();
+
+	Player();
+	~Player();
 
 	
 };

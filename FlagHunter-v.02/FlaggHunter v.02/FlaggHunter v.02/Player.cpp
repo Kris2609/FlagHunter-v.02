@@ -19,3 +19,11 @@ void Player::MoveLeft()
 void Player::MoveRight()
 {
 }
+
+Player::Player()
+{
+}
+
+Player::~Player()
+{
+}
