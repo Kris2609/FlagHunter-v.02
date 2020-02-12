@@ -11,12 +11,14 @@ int main()
     RenderWindow window(VideoMode(800, 600), "FlagHunter"); 
 
     Event event; 
+    
 
     while (window.isOpen())
     {
         while (window.pollEvent(event))
         {
-            if (event.type == Event::Closed) {
+            if (event.type == Event::Closed) 
+            {
                 window.close(); 
             }
 
